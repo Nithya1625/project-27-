@@ -21,8 +21,10 @@ function setup() {
 	roof = new Roof(200,20,1700,30);
 	bob1= new Bob(100,400);
 	bob2 = new Bob(300,400);
+	bob3 = new Bob(200,400)
 	rope1 = new Rope(bob1.body,roof.body,{x:40,y:20});
 	rope2 = new Rope(bob2.body,roof.body,{x:140,y:20});
+	rope3 = new Rope(bob3.body,roof .body,{x:100,y:20})
 
 
 	Engine.run(engine);
@@ -39,6 +41,8 @@ function draw() {
   bob1.display();
 rope1.display();
 rope2.display();
+bob3.display();
+rope3.display();
   
   drawSprites();
  
